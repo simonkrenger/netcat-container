@@ -1,6 +1,13 @@
 # netcat-container
 
-A container running `netcat` accepting TCP connections on port 2345.
+A container running `netcat` accepting TCP connections on port 2345. Once running, it will print the output for `nc -l` to stdout:
+
+~~~
+$ kubectl logs -f netcat-5ccd85fdd9-m6zjv
+Ncat: Version 7.80 ( https://nmap.org/ncat )
+Ncat: Listening on :::2345
+Ncat: Listening on 0.0.0.0:2345
+~~~
 
 ## Run it locally
 
